@@ -1,205 +1,151 @@
 ---
-title: When and how to use maps in your service
+title: Maps
 description: Guidance to help you use maps within your service
 section: Guidance
-theme: Help to
+theme: 
 layout: layout-pane.njk
 show_page_nav: true
 order: 2
 ---
 
-## Who is this guidance for
+Maps help to people to identify and draw areas geospatially.
 
-__This is preliminary guidance.__
-
-
-_It is based on the Government service standard and design principles, guides other Government departments have written, and information provided by HMLR service teams.
-If you use maps in your service, or are considering it, you should tell us about your map needs, and get involved in improving this guidance.  We need more HMLR teams and people to get involved._
-
-
-This guide is for service teams, and anyone involved in procuring or the use of maps in our services.
-This guide is to help you consider: 
-- if a map should be used
-- what to do when using a map
-
-You must research with your users:
-- their digital and geospatial literacy
-- how they complete their goal currently; how they use maps, and the difficulties they encounter with them
-
-
-
-## When should a map be used?
-
-Maps are almost always inaccessible to many people.
-Geospatial literacy is an specialised and acquired skill and skill levels are generally low.  Map information and interactivity is complicated.
-
-Services should try to avoid a map, and will need to demonstrate:
-the alternative way for a user to complete their goal or task is
-- how the use of, and complexity of a map has been minimised  
-- how have the mapping features provided been made as accessible as possible
-
-(The [Accessibility Regulations 2018](https://www.legislation.gov.uk/uksi/2018/852/regulation/3/made) do not apply to “_online maps and mapping services, as long as essential information is provided in an accessible digital manner for maps intended for navigational use;_” So for navigational maps, we need to provide an accessible alternative)
-For all maps, the aim is to make them as accessible as possible. The function they provide must always be available in another form for people who cannot use a map. The recommended way to do this is to design the alternative to a map first. 
-
+![image](/images/map.png)
 
 ## When to use a map
 
-Use a map when:
-- there is no alternative.  Alternatives need to be explored and documented that they do not exist
-- it is an (progressive) enhancement – that a map makes the task easier for the user, but they can still complete their task without it
+Use a map when it makes identifying or drawing areas easier to do.
+
+Maps help people to:
+
+- identify and confirm an area with or without a postal address
+- select, draw, edit and delete areas
+- compare areas
+- identify a feature within an area, for example a building, tree or road
+- identify where features share a boundary
+
+You should also provide an alternative to a map if possible, and it is recommended that this be designed first.
+
+Both the map and the alternative to the map should be tested with users.
+
+## How it works
+
+We have created in-house maps.
+
+The maps within Search for local land charges and Maintain use the GDS radio buttons for the map options.
 
 
-## When using a map
+## Make maps more accessible and easier to use
 
-Considerations that must be made when a map is being used:
-- what the alternatives to the map are for your users to complete their goal, and how to make these as equitable as possible
-- what features of the map can be provided in accessible way
-- how to make the map as simple to use as possible
+### Map alternatives
+Alternatives to a map could include turning geospatial data into textual data, for example:
+- describing the area and orientation
+- showing the postcode based on the map coordinates
 
-You must test with your users:
-- the accessibility and usability of the map
-- the alternatives to the map
+Map alternatives could include:
+- providing data in other formats, such as geoJSON
+- a search and filter function
 
-To find alternatives to the whole, or parts of the map, and to make them as simple to use as possible, it’s recommended that teams document user needs (goals, needs, tasks) and what features of a map are required to fulfil that need.
+### Map accessibility 
+Maps and mapping services do not fall under the accessibility regulations.
 
-
-## Choosing a map provider
-
-You must consider usability and accessibility when procuring a map tool. (See Techniques to make maps easier to use below)
-
-
-## How are maps used to help users in the context of Land Registration:
-
-Some of the reasons HMLR provide a map, or users prefer a map are listed here.  
-Consider ways to meet those needs without relying only on a map, or with particular devices or abilities – such as a mouse, or sight. 
-
-### Identifying or confirming a place(s)
-
-Identifying places is often done visually:
-- in support of a primary textual description – e.g. it has a postal address 
-- as the primary way it is known or recognised – e.g. land to the east of…
-- as the only way it is recognised – e.g. it might be unregistered
-
-
-### Selecting a place(s) or area(s)
-
-Selecting places is often done with a mouse or touching a screen.
-- to find out more information about this place
-- to perform another action on
-
-### Defining a place or area
-
-Defining an area is often done by drawing with a mouse:
-- to find out more information about it
-- to perform another action on
-
-### Comparing places
-
-Comparing places is often done visually:
-- to identify the place known to the user amongst many other places
-- to find a suitable place amongst many of the same type – for example a development opportunity
-
-### Identifying an element within a place or area
-
-Identifying features is often done visually:
-- to find out if it’s within the place they are interested in, or what place it is in – for example a tree
-- to help identify the place, as they recognise its the place by features within it – for example the shape and placement of a building within the extent of the property
-
-
-### Identifying features where places or areas share a boundary
-
-Identifying features is often done visually:
--to understand where the boundary is, what it is, and whose responsibility it is - for example a fence
-
-
-## Services and products using maps
-
-#### Local Land charges
-
-The search service provides a predetermined boundary to search for local land charges. Where a boundary does not exist, tools are provided to enable users to define their own search area. The use of maps was tested at the Digital Accessibility Centre (DAC).  The recommendations were incorporated into the search service and added to this guide.  The full details of the report, user research and design thinking is available from the Design system team.
-
-The Maintain service uses maps to define and display boundary extents used in the search service. Data is transferred from existing organisation systems and users are familiar with their own GIS in order to import and export map data.
-
-The migration helper is a set of tools to refine migrated authority data. It features mapping tools to allow users to accurately define and update charge boundaries.
-
-#### Search for land and property
-
-This service uses a map as an alternative way to search for property information.
-
-#### Other Services
-We also provide a version of the Search LLC map on Portal / Business Gateway for users. There is also a Map search (showing registrations and title numbers) as part of the Portal's information searches.
-
-
-## Techniques to make maps easier to use
-
-Usability and accessible alternatives could include:
-- using different textual ways of describing a place, perhaps by turning geospatial data into textual data.  For example, its area and orientation, in context to something known to the user textually. Another example is using Ordnance Survey API to carry out a reverse look up getting the postcode based on the map coordinates. 
-- back and forth interactions between the user and the system to remove places until one remains (refining a search, filtering)
-- providing the data in other semantic data formats such as geoJSON, that can be ready by assistive technologies or other machines.
-
+Maps can contain accessibility issues and usability can be complex. You should make mapping features as accessible and usable as possible.
 
 Ways to make a map more usable and accessible include:
-- removing features of the map
-  - only presenting the features needed by the user for their current task
-  - placing map controls outside of the map
-  - vector map tiles allow for the layering and styling of map features
-- organising the interactive features in the most usable order
-  - have the search and filter tools earlier in the tab order than the map
-  - investigate separating map controls into basic and advanced options
-  - presenting customised onscreen help, e.g. keyboard controls
-- organising the order of pages in the service and the order of elements on the page
-  - don't put the map at the front of your service as the main way to search, when people usually start with another way such as postcode
-  - don't make the map the first or primary element on a page when it doesn't have to be – use it in support of information everyone understands, for example use a map after a textual address, not before
-- presenting features in textual form
-  - do not use icons, use text labels.  
-  - don’t put text in images
-- adding textual descriptions to visually presented elements
-  - to describe it
-  - to add additional information about it
-- using the correct semantic elements
-  - use button HTML tag for ‘buttons’ not other tags
-  - use GOV.UK Design System components instead of custom ones
-- adding additional semantic data to elements
-  - metadata such as microdata or microformats  
-  - using HTML attributes or ARIA attributes
-- presenting features in different colours or shading
-  - black and white
-  - high colour contrast (aim for WCAG AAA compliance)
-  - hatching
-  - use or copy schemes developed specifically for this purpose from trusted sources such as Ordnance Survey, but check the use case is the same as yours
-- selecting and deselecting features, or manipulating the map by means other than a mouse or touch
-  - keyboard
-  - voice
-  - by back-and-forth interactions (filtering, or refining a search, or removal of map elements)
-- for mouse and touch
-  - ensure that touch targets are large enough
-- make features accessible by keyboard
-  - that can be tabbed to
-  - are in a logical tab order
-  - investigate methods for selecting features or drawing a boundary e.g. using Web Feature Services (WFS) and selecting a feature at the centre of the map
-  - Common key mappings are arrow keys for panning, =/+ for zoom and enter /space to select (Consider including a toggle to show/hide the key controls)
-  - Some JavaScript libraries handle zoom slightly differently. Most zoom the map when the =/+ key is pressed without the need to use the shift key. (Openlayers does not do this and the functionality would need to be added)
-- use vector maps not static images 
-- JavaScript
-  - removing, or reducing the amount of
-  - providing the no script version of the map if JavaScript is unavailable to the user
- 
-Use of colour, hatching, colour blindness
-- [Data visualisation and colour blindness](https://beacon-dodsworth.co.uk/blog/data-visualisation-and-colour-blindness/)
-- [Office for National Statistics choropleth census maps](https://www.ons.gov.uk/census/maps/choropleth/housing/accommodation-type/accommodation-type-3a/flat-maisonette-or-apartment)
-- [ESRI guide to Designing maps for colourblind readability](https://community.esri.com/t5/esri-training-blog/designing-maps-for-colorblind-readability/ba-p/1139017)
+- simplifying the map options to only those that the user needs
+- placing map controls outside of the map
+- use vector map tiles to allow for layering and styling of map features
+
+### Ordering pages, elements and map options 
+
+Organise the order of pages in the service and the order of elements on the page, for example:
+- placing a postcode search first
+- using a map after a textual address, so that the map is not the primary element if it does not need to be
+
+You can organise the interactive map options in the most usable order, for example:
+- have the search and filter tools earlier in the tab order than the map
+- investigate separating map controls into basic and advanced options
+- present customised help, such as keyboard controls
+
+
+## Textual and semantic elements
+
+Present map options in textual form, this includes:
+- using labels instead of icons
+- not putting text in images
+
+Add textual descriptions to visually presented elements.
+
+Use the correct semantic elements, including:
+- - button HTML tags for buttons, not other tags
+GOV.UK Design System components instead of custom ones
+
+Add additional semantic data to elements, including
+- metadata such as microdata or microformats
+- HTML attributes or ARIA attributes
+
+
+### Map colours
+
+Present map features in different colours or shading, such as:
+- black and white
+- high colour contrast (aim for WCAG AAA compliance)
+- hatching
+
+See the following examples of map colours:
+- [ESRI guide to Designing maps for colourblind readability](https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/designing-maps-for-colorblind-readability/)
 - [Ordnance Survey maps example where the colour palette can be chosen](https://labs.os.uk/public/cvd-zoomstack/)
+- [Office for National Statistics choropleth census maps](https://www.ons.gov.uk/census/maps/choropleth/housing/accommodation-type/accommodation-type-3a/flat-maisonette-or-apartment)
+
+You can use or copy colour schemes developed specifically for this purpose from trusted sources such as Ordnance Survey. Check the use case is the  same as yours.
 
 
-## Where to get more help on using maps in your service
+## Alternative ways to interactive with the map
+Explore interacting the map by other ways, for example:
+- keyboard
+- voice
+- filtering, refining a search, or removal of map features
 
-Speak to teams with maps in their services - for example, Local land charges. 
+For mouse and touch screen, ensure that touch targets are large enough.
 
-Collaborate with Government designers on Maps
-- [UK Government Digital Slack: maps_in_services] channel
-- [Cross Government Maps Slack]: A community collaboration to develop guidance on designing accessible maps
+### Using a keyboard
 
-Learn from other Government departments maps guidance
+Make map options accessible by keyboard, including:
+- ensuring the controls can be tabbed to
+- that they are in a logical tab order
+- investigating methods for selecting features or drawing a boundary, for example, using Web Feature Services (WFS) and selecting a feature at the centre of the map
+
+Common key mappings are:
+- arrow keys for panning
+- + and - for zoom
+- enter or space to select
+
+### Key controls, zoom and vector map tiles
+Consider including a toggle to show/hide the key controls.
+
+Some JavaScript libraries handle zoom slightly differently. Most  zoom the map when the =/+ key is pressed without the need to use the shift key. Openlayers does not do this and the functionality would need to be added.
+
+Use vector map tiles instead of static images.
+
+### Remove or reduce the amount of JavaScript
+Provide the no script version of the map if JavaScript is unavailable to the user
+
+
+## Services with maps
+The following HM Land Registry services use maps:
+- Local land charges; Search for local land charges, Portal, Maintain and Migration helper
+- Search for land and property
+- MapSearch within Portal
+
+
+## Get help using maps in your service
+Speak to teams with maps in their services.
+
+Collaborate with Government designers on maps. Visit:
+- [UK Government Digital slack Maps in services channel](https://ukgovernmentdigital.slack.com/archives/CGND8AMPU)
+- [Cross Government slack Maps in services workspace](https://mapsinservices.slack.com)
+
+Learn from other Government departments maps guidance. View:
 - [GOV.UK Design system backlog: Maps](https://github.com/alphagov/govuk-design-system-backlog/issues/75)
 - [DEFRA public wiki page on using interactive maps](https://github.com/defra-design/design/wiki/Interactive-maps)
 - [DEFRA Design standards for maps](https://github.com/DEFRA/design-standards/blob/master/Maps.md)
@@ -208,30 +154,17 @@ Learn from other Government departments maps guidance
 - [Transport for West Midlands, Map style](https://designsystem.tfwm.org.uk/styles/maps/)
 
 [Ordnance Survey Labs](https://labs.os.uk/pages/index.html) contains tools and information for using maps.
-Of note is the [GeoDataViz Toolkit](https://github.com/OrdnanceSurvey/GeoDataViz-Toolkit), containing sections on 
+
+The [GeoDataViz Toolkit](https://github.com/OrdnanceSurvey/GeoDataViz-Toolkit) contains sections on 
 - Using the right basemap
 - Cartographic design principles
 - Using colours
 
 
 
-## Help us improve this preliminary guide
-
-This is preliminary guidance, meaning that it is the first guide on this subject.  It incorporates things we have learnt from our services, but has not been fully tested, or tested deeply enough in services.
-
-This guide could be improved by your feedback about how useful this guide is, for example what aspects of map use:
-- need adding to this guide
-- need better explanation
-- where better sources of information exist.
-
-This guide could be improved by adding examples of:
-- alternatives to maps
-- how to reduce reliance on a map or features used in maps
-- how to make features of maps accessible
-
-This guide could be improved by:
-- adding guidance on how to use geospatial information not in a map, for example helping users better understand textual geographical data
+## Help us improve maps and this guidance
 
 If you have feedback on how we can improve this guide, email [hmlr-design-system-support@landregistry.gov.uk](mailto:hmlr-design-system-support@landregistry.gov.uk). 
 
-This guide will change as we learn more about maps. If you have some [research / evidence / learning / tips], email [hmlr-design-system-support@landregistry.gov.uk](mailto:hmlr-design-system-support@landregistry.gov.uk).
+### Need help?
+If you have got a question about the HM Land Registry Design System, [contact the team](mailto:hmlr-design-system-support@landregistry.gov.uk).
